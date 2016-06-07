@@ -10385,6 +10385,8 @@ alasql.aggr.GROUP_CONCAT = function(v,s,stage){
     	return v; 
     } else if(stage == 2) {
     	return s+','+v;
+    } else if (stage ==3 ) {
+    	return s;
     }
 };
 
